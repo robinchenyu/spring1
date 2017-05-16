@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
  */
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = CDPlayerConfig.class)
+//@ContextConfiguration
 public class CDPlayerTest {
     @Autowired
     private CompactDisc cd;
