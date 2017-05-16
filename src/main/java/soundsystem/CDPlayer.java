@@ -9,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class CDPlayer {
     public static void main(String[] args) {
 //        System.out.println("Hello ");
-        ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ApplicationContext ac = new ClassPathXmlApplicationContext("soundsystem/applicationContext.xml");
         CompactDisc cd = (CompactDisc) ac.getBean("compactDisc");
         cd.play();
     }
