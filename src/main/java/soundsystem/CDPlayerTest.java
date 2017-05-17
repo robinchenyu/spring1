@@ -1,6 +1,8 @@
 package soundsystem;
 
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.contrib.java.lang.system.SystemOutRule;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
@@ -18,8 +20,20 @@ public class CDPlayerTest {
     @Autowired
     private CompactDisc cd;
 
+    @Rule
+    public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
+
     @Test
     public void cdShouldNotBeNull() {
         assertNotNull(cd);
+    }
+
+    @Test
+    public void play() {
+        cd.play();
+        assertEquals(
+                "Hello World "+"Robin"+"\r\n",
+                systemOutRule.getLog()
+        );
     }
 }
