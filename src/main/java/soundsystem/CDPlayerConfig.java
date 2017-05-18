@@ -13,7 +13,7 @@ public class CDPlayerConfig {
 
     @Bean
     public CompactDisc SgtPeppers() {
-        return new SgtPeppers("Robin");
+        return new SgtPeppers();
     }
 
 }
