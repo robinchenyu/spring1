@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:c="http://www.springframework.org/schema/c"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
-    <bean id="compactDisc" class="soundsystem.SgtPeppers" >
-        <property name="name" value="Robin"/>
-    </bean>
+    <!--<bean id="compactDisc" class="soundsystem.SgtPeppers" >-->
+        <!--<property name="name" value="Robin"/>-->
+    <!--</bean>-->
+    <!--<bean id="compactDisc" class="soundsystem.SgtPeppers" c:name="Chen"/>-->
+    <bean id="compactDisc" class="soundsystem.SgtPeppers" c:_0="Chen1"/>
     <!--<context:component-scan base-package="soundsystem" />-->
 </beans>
 
