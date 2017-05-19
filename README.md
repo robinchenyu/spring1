@@ -52,3 +52,13 @@ add BlankDisc and inject List data
 ### v1.07
 
 add util:list to config
+
+### v1.08
+
+dependency config bean in xml and javaconfig
+1. add CDPlayer impl MediaPlayer
+2. add config in CDPlayerConfig
+3. add test run() in CDPlayerTest
+
+1. add config in applicationContext.xml
+2. add calling in CDPlayer
