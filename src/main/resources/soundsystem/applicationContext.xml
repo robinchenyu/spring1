@@ -12,7 +12,15 @@
         <!--<property name="name" value="Robin"/>-->
     <!--</bean>-->
     <!--<bean id="compactDisc" class="soundsystem.SgtPeppers" c:name="Chen"/>-->
-    <bean id="compactDisc" class="soundsystem.SgtPeppers" p:name="Chen1"/>
+    <!--<bean id="compactDisc" class="soundsystem.SgtPeppers" p:name="Chen1"/>-->
+    <bean id="compactDisc" class="soundsystem.BlankDisc" c:name="Bd" c:type="test">
+        <constructor-arg>
+            <list>
+                <value>Player 1</value>
+                <value>Sing a song</value>
+            </list>
+        </constructor-arg>
+    </bean>
     <!--<context:component-scan base-package="soundsystem" />-->
 </beans>
 
