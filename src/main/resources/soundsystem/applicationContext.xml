@@ -26,6 +26,7 @@
     </bean>
     <bean id="compactDisc2" class="soundsystem.BlankDisc" c:name="Bd" c:type="test" c:_2-ref="trackList">
     </bean>
+    <bean id="mediaPlayer" class="soundsystem.CDPlayer" c:_0="CDPlayer" c:_1-ref="compactDisc2"/>
 
     <util:list id="trackList">
         <value>Sgt. Pepper's Lonely Hearts</value>

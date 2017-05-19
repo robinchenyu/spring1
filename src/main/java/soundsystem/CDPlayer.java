@@ -34,5 +34,8 @@ public class CDPlayer implements MediaPlayer{
 
         CompactDisc cd2 = (CompactDisc) ApplicationContextUtil.getInstance().getBean("compactDisc2");
         cd2.play();
+
+        MediaPlayer mp = (MediaPlayer) ApplicationContextUtil.getInstance().getBean("mediaPlayer");
+        mp.run();
     }
 }
