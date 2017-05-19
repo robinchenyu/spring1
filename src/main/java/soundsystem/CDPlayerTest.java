@@ -20,6 +20,9 @@ public class CDPlayerTest {
     @Autowired
     private CompactDisc cd;
 
+    @Autowired
+    private CDPlayer cp;
+
     @Rule
     public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 
@@ -33,6 +36,17 @@ public class CDPlayerTest {
         cd.play();
         assertEquals(
                 "Hello World "+"Robin"+"\r\n",
+                systemOutRule.getLog()
+        );
+    }
+
+    @Test
+    public void run() {
+        cp.run();
+        assertEquals(
+                "run CC\r\n" +
+                "Hello World "+"Robin"+"\r\n" +
+                "run end\r\n",
                 systemOutRule.getLog()
         );
     }
