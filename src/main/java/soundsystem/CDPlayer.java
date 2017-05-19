@@ -15,5 +15,8 @@ public class CDPlayer {
 //        cd.play();
         CompactDisc cd = (CompactDisc) ApplicationContextUtil.getInstance().getBean("compactDisc");
         cd.play();
+
+        CompactDisc cd2 = (CompactDisc) ApplicationContextUtil.getInstance().getBean("compactDisc2");
+        cd2.play();
     }
 }

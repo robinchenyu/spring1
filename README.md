@@ -45,5 +45,10 @@ using property (p schema) tag in xml to inject data to bean
 1. constructor-arg depending on Constructor method, it would call Constructor Method to set value
 2. property depending on setter method, it would call setter method to set value
 
+### v1.06
 
+add BlankDisc and inject List data
 
+### v1.07
+
+add util:list to config
