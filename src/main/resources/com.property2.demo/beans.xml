@@ -11,9 +11,9 @@
        http://www.springframework.org/schema/context/spring-context.xsd
        http://www.springframework.org/schema/util
        http://www.springframework.org/schema/util/spring-util.xsd">
-    <bean id="Robin" class="com.autowire.demo.Person" autowire="constructor" p:name="Chen" p:age="31"/>
-    <bean id="dog" class="com.autowire.demo.Dog" p:name="wan"/>
+    <context:property-placeholder location="com.property2.demo/app.properties"/>
 
-    <context:property-placeholder location=""
+    <bean id="person" class="com.property2.demo.Person" p:name="${person.name}" p:age="${person.age}"/>
+    <!--<bean id="dog" class="com.property2.demo.Dog" p:name="${dog.name}"/>-->
 
 </beans>
