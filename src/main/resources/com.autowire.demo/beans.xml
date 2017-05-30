@@ -14,6 +14,5 @@
     <bean id="Robin" class="com.autowire.demo.Person" autowire="constructor" p:name="Chen" p:age="31"/>
     <bean id="dog" class="com.autowire.demo.Dog" p:name="wan"/>
 
-    <context:property-placeholder location=""
 
 </beans>
